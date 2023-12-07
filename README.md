@@ -1,1 +1,1 @@
-# config
+# @appstack-io/config
