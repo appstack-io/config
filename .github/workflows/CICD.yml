@@ -64,5 +64,8 @@ jobs:
 
       - name: Publish
         if: github.ref == 'refs/heads/main' && steps.release.outputs.version
-        run: npm publish
+        run: |
+          echo $APPSTACKIO_NPM_TOKEN
+          cat .npmrc
+          npm publish
 
