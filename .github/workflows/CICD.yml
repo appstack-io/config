@@ -28,7 +28,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18.17'
-          registry-url: 'https://npm.pkg.github.com/'
           scope: '@appstack-io'
 
       - name: Configure NPM
