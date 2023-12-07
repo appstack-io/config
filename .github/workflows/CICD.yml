@@ -32,7 +32,7 @@ jobs:
           scope: '@appstack-io'
 
       - name: Configure NPM
-        run: echo "APPSTACKIO_GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
+        run: echo "APPSTACKIO_NPM_TOKEN=${{ secrets.NPM_TOKEN }}" >> $GITHUB_ENV
 
       - name: Install Dependencies
         run: npm ci
